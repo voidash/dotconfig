@@ -36,6 +36,8 @@ making it default
 Make agnoster the default theme of zsh by modifying .zshrc file. Powerline fonts are required
 
       sudo apt-get install fonts-powerline
+the font should be powerline fonts compatiable like ubuntu font
+
       
 ![because there is arya](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
  
