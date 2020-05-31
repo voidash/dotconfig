@@ -24,6 +24,25 @@ Remove Ubuntu default dock and install plank
      sudo apt-get install plank
 Add plank on startup apps in tweaks app
 
+## install zsh and oh-my-zsh
+     
+     sudo apt-get install zsh\
+     sudo apt install curl\
+     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+     
+making it default
+
+    chsh -s /bin/zsh
+Make agnoster the default theme of zsh by modifying .zshrc file. Powerline fonts are required
+
+      sudo apt-get install fonts-powerline
+      
+![because there is arya](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
+ 
+ 
+    
+
+
 
      
      
