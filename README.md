@@ -1,2 +1,3 @@
 # dotconfig
-My linux configuration file
+
+Linux and windows configuration file
