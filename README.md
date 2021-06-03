@@ -1,10 +1,38 @@
-# window-mover
+# My Dot Configuration  files for vaious OS 
 
- Code from [pmb6tz/windows-desktop-switcher](https://github.com/pmb6tz/windows-desktop-switcher) and [Depau/swin](https://github.com/Depau/swin).
+## Contains Configuration files for the application 
 
-# Added changes
+- AutoHotKey
+    - `I3` like desktop/workspace switching
+    - `ctrl + h j k l` to arrow key remap
 
-- supports `ctrl+shift+h j k l` as arrow keys.
-- mapped `capsLock` to `Esc`
+- I3-gaps  
+    - Tiling window manager for linux
+
+- Yabai
+    - TWM for macOS
+    - keymaps are based on I3
+
+- Vimium 
+    - browser extension
+
+- vim
+    - for use with vscode 
+    - and without vscode 
+
+- Fish
+    - Fish Shell minimal configuration
+        - with support for fzf.fish
+    - custom commands for music manipulation on linux
+
+- autokey
+    - like autohotkey . 
+    - just for mapping ctrl+shift+ hjkl on linux
+
+# To Add 
+   - ranger config
+   - rainmeter configuration
+   - default github conf ...
+   
 
 
