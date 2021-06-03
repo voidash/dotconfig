@@ -33,6 +33,7 @@
    - ranger config
    - rainmeter configuration
    - default github conf ...
+   - kitty configuration
    
 
 
