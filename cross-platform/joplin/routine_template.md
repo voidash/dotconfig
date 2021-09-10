@@ -2,9 +2,9 @@
 
 
 ## Important Tasks
-	- [ ] Task A
+- [ ] Task A
 
 ## Urgent Tasks
-	- [ ] Task A
+- [ ] Task A
 
 ## Mantra of the day
