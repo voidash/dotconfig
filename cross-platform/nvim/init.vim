@@ -1,4 +1,4 @@
-set hidden
+n
 set relativenumber 
 call plug#begin() 
 
@@ -35,6 +35,8 @@ call plug#end()
 
 inoremap <C-p> <Esc>:FZF<CR>
 nnoremap <C-p> :FZF<CR>
+
+nnoremap <C-A-p> <Esc>:Rg<CR>
 
 let g:fzf_action = {
       \ 'ctrl-t': 'tab split',
@@ -274,4 +276,17 @@ endfunction
 
 
 nnoremap <f10> :w!<CR>:call RunCommand()<CR>
+
 nnoremap <f9> :w!<CR>:call TestCommand()<CR>
+
+function! TestIndividualForRust()
+  "for the function you want to test put it in cursor
+  let extension = expand("%:e") 
+  let l:current_cursor_word = expand("<cword>")
+
+  if(extension == "rs")
+    execute '! cargo test '.l:current_cursor_word. ' -- --nocapture'
+  endif
+endfunction
+
+nnoremap <leader><f9> :w!<CR>:call TestIndividualForRust()<CR>
