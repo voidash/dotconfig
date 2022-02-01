@@ -1,0 +1,30 @@
+prompt = "starship prompt"
+startup = [
+'def nepal_date [] { fetch "http://worldtimeapi.org/api/timezone/asia/kathmandu" | get unixtime | into string | build-string "@" $in | ^sudo date -s $in }',
+'def w [...query] { let appID = "XGE5QR-TJJ2P37T7V"; let queryString = ($query | str collect " ") ; let result = (fetch ("https://api.wolframalpha.com/v1/result?" + ([[appid i]; [$appID $queryString]] | to url))); $result + "" }',
+'def ym [ link: string, --type (-t): string ] { let output_dir = "~/music/";let types = ["nepali" "english" "hindi" "morning"];let directory = ($types | each { $type == $it }; build-string $output_dir $type "/%(title)s.%(ext)s"); ^youtube-dl -x --audio-format mp3 -o $directory $link }',
+''
+]
+
+[line_editor]
+edit_mode = "vi"
+completion_type = "circular"
+max_history_size = 100000
+
+
+[textview]
+use_italics = true
+
+
+[env]
+VENV = "~/.virtualenv"
+EDITOR = "nvim"
+
+path = [
+	"~/bin",
+	"/opt/flutter/bin",
+	"~/install/clion/bin",
+	"~/.cargo/bin",
+	"~/.local/bin"
+]
+
