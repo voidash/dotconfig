@@ -28,12 +28,12 @@
 - autokey
     - like autohotkey . 
     - just for mapping ctrl+shift+ hjkl on linux
+- nushell
 
 # To Add 
-   - ranger config
    - rainmeter configuration
    - default github conf ...
-   - kitty configuration
+  
    
 
 
