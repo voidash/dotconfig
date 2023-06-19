@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "myfont";
+        font-style: normal;
+        src: url("./myfont-regular-webfont.woff") format("woff");
+      }
+      * {
+        font-family: "myfont";
+      }
+      .center {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <img src="./wall.jpg" width="400px" />
+    </div>
+    <center>
+      <h1>Got to Fill this Voidness</h1>
+      <h2>conquer</h2>
+    </center>
+    <script>
+      let eventString = "";
+      document.addEventListener("keydown", (e) => {
+        eventString += e.key;
+        if (
+          eventString.includes("ihaveaplan") ||
+          eventString.includes("arya")
+        ) {
+          console.log("ok");
+          document.location.href =
+            "https://docs.google.com/document/d/1VHtjLma_WXQbW6xt6UikrMriM4yWE1yW_pMyaVxRmuA/edit?usp=sharing";
+        }
+      });
+    </script>
+  </body>
+</html>
