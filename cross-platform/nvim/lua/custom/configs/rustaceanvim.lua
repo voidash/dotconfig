@@ -1,0 +1,11 @@
+-- vim.g.rustaceanvim = function ()
+--   return {
+--     dap = {
+--     adapter = {
+--         type = 'executable',
+--         command = '/opt/homebrew/opt/llvm/bin/lldb-dap',
+--         name = 'lldb'
+--     },
+--     }
+--   }
+-- end
