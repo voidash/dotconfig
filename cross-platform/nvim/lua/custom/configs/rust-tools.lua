@@ -124,6 +124,23 @@ local opts = {
     -- standalone file support
     -- setting it to false may improve startup time
     standalone = true,
+    settings = {
+      ['rust-analyzer'] = {
+        cargo = {
+          -- features = "all"
+        },
+        imports = {
+          granularity = {
+            enforce = "true",
+            group = "preserve"
+          },
+          prefix = "crate",
+        },
+        rustfmt = {
+          extraArgs = {""}
+        }
+      }
+    }
   }, -- rust-analyzer options
 
   -- debugging stuff

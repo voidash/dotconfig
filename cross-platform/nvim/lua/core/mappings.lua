@@ -175,6 +175,7 @@ M.lspconfig = {
     ["<leader>ra"] = {
       function()
         require("nvchad.renamer").open()
+        vim.cmd('silent! wa')
       end,
       "LSP rename",
     },
@@ -234,7 +235,6 @@ M.lspconfig = {
       end,
       "Remove workspace folder",
     },
-
     ["<leader>wl"] = {
       function()
         print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
@@ -242,7 +242,6 @@ M.lspconfig = {
       "List workspace folders",
     },
   },
-
   v = {
     ["<leader>ca"] = {
       function()

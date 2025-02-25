@@ -158,8 +158,12 @@ local default_plugins = {
         -- snippet plugin
         "L3MON4D3/LuaSnip",
         dependencies = "rafamadriz/friendly-snippets",
-        opts = { history = true, updateevents = "TextChanged,TextChangedI" },
+        opts = { history = true, updateevents = "TextChanged,TextChangedI"},
         config = function(_, opts)
+          local cmp = require("cmp")
+          cmp.setup({
+            enabled = false
+          })
           require("plugins.configs.others").luasnip(opts)
         end,
       },

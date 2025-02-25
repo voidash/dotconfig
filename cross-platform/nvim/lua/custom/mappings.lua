@@ -3,7 +3,10 @@ local M = {}
 
 M.general = {
   n = {
+    ["rr"] = {":RustRunnables<CR>", "Rust run test"},
+    ["rws"] = {":%s/\\(\\w\\)\\s*$/\\1/g<CR>", "Remove rust whitespace"},
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["td"] = {":Telescope diagnostics<CR>"},
     ["gD"] = {
       function()
         vim.lsp.buf.declaration()
@@ -17,6 +20,16 @@ M.general = {
       end,
       "LSP definition",
     },
+
+
+    ["ta"] = {
+      function()
+        local cmp = require('cmp')
+        local current_state = cmp.get_config().enabled
+        cmp.setup({
+          enabled = not current_state
+        })
+      end, "toggle autocomplete" },
 
     ["K"] = {
       function()
@@ -39,6 +52,8 @@ M.general = {
       "LSP signature help",
     },
 
+    ["<leader>dv"] = { ":DiffviewOpen<CR>","LSP signature help" },
+
     ["<leader>D"] = {
       function()
         vim.lsp.buf.type_definition()
@@ -51,6 +66,12 @@ M.general = {
         require("nvchad.renamer").open()
       end,
       "LSP rename",
+    },
+    ["<leader>ts"] = {
+      function()
+        require("base46").toggle_transparency()
+      end,
+      "Toggle transparency",
     },
 
     ["<leader>ca"] = {
